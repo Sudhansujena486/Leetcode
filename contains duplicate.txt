@@ -1,0 +1,15 @@
+ 217 leetcode
+
+contains duplicate
+
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+       set<int> ans(nums.begin(),nums.end());
+       if(nums.size()>ans.size()){
+           return true;
+       }
+       return false;
+       
+    }
+};
